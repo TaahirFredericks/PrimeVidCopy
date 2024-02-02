@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="Black"
+             x:Class="MyFirstMauiApplication.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="amazonprimevideo"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Amazon Video Black Backround" />
+
+            <Label
+                Text="Welcome to Amazon Video"
+                Style="{StaticResource Headline}"
+                TextColor="White"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                    Text="Create account. New to Amazon?"
+                    FontSize="Default"
+                    WidthRequest="400"
+                    BackgroundColor="Orange"
+                    BorderColor="Orange" 
+                    StyleId="SignUpPage"
+                    Clicked="OnButtonClicked"
+                    BorderWidth="46"/>
+
+            <Button 
+                    Text="Sign in. Already a customer?"
+                    WidthRequest="400"
+                    FontSize="Default"
+                    BackgroundColor="Orange"
+                    BorderColor="Orange"
+                    StyleId="LogInPage"
+                    Clicked="OnButtonClicked"
+                    BorderWidth="46"/>
+
+            <Label
+                Text="By signing in, you agree to the Prime Video Terms of Use and license agreements which you can find on the Amazon website"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                TextColor="White"
+                FontSize="Subtitle" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Alternatively, click " />
+                        <Span Text="Need help?"
+                              TextColor="CadetBlue"
+                              TextDecorations="Underline"
+                              FontSize="Subtitle"/>
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.primevideo.com/help/ref=dvm_MLP_EU_help" />
+                        </Span.GestureRecognizers>
+
+                        <Span Text="for amazon help page" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

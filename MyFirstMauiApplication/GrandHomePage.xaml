@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMauiApplication.GrandHomePage"
+             BackgroundColor="Black"
+             Title="GrandHomePage">
+
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+
+            <Image
+            Source="reacher"
+            Aspect="Fill"
+            HeightRequest="400"
+            WidthRequest="600" />
+
+            <Label 
+            Text="Recommended for You!" 
+            TextColor="White" 
+            FontSize="20" 
+            FontAttributes="Bold" 
+            Margin="16,30,0,0"/>
+    
+        <ScrollView Orientation="Horizontal">
+            <HorizontalStackLayout>
+            
+
+            
+
+                <Grid ColumnDefinitions="*,*,*,*,*"
+                      RowDefinitions="*" >
+
+                    <Frame 
+                        Grid.Row="0" 
+                        Grid.ColumnSpan="0"
+                        HeightRequest="300"
+                        WidthRequest="200"
+                        CornerRadius="5"
+                        HorizontalOptions="Start"
+                        IsClippedToBounds="True"
+                        Padding="0"
+                        BackgroundColor="White"
+                        BorderColor="White" 
+                        Margin="16,10,0,20">
+
+                            <Image Source="mariobros" Aspect="Fill"/>
+                    </Frame>
+                       
+
+                    <Frame 
+                        Grid.Row="0" 
+                        Grid.Column="1"
+                        HeightRequest="300"
+                        WidthRequest="200"
+                        CornerRadius="5"
+                        HorizontalOptions="Start"
+                        IsClippedToBounds="True"
+                        Padding="0"
+                        BackgroundColor="White"
+                        BorderColor="White"
+                        Margin="16,10,0,20">
+
+
+                            <Image Source="wednesday" Aspect="Fill"/>
+                            
+                    </Frame>
+                        
+
+
+                        <Frame 
+                        Grid.Row="0" 
+                        Grid.Column="2"
+                        HeightRequest="300"
+                        WidthRequest="200"
+                        CornerRadius="5"
+                        HorizontalOptions="Start"
+                        IsClippedToBounds="True"
+                        Padding="0"
+                        BackgroundColor="White"
+                        BorderColor="White"
+                        Margin="16,10,0,20">
+
+
+                        <Image Source="uncharted" Aspect="AspectFill"/>
+
+                    </Frame>
+
+                    <Frame 
+                        Grid.Row="0" 
+                        Grid.Column="3"
+                        HeightRequest="300"
+                        WidthRequest="200"
+                        CornerRadius="5"
+                        HorizontalOptions="Start"
+                        IsClippedToBounds="True"
+                        Padding="0"
+                        BackgroundColor="White"
+                        BorderColor="White"
+                        Margin="16,10,0,20">
+
+
+                        <Image Source="kungfupanda3" Aspect="AspectFill"/>
+
+                    </Frame>
+
+                    <Frame 
+                        Grid.Row="0" 
+                        Grid.Column="4"
+                        HeightRequest="300"
+                        WidthRequest="200"
+                        CornerRadius="5"
+                        HorizontalOptions="Start"
+                        IsClippedToBounds="True"
+                        Padding="0"
+                        BackgroundColor="White"
+                        BorderColor="White"
+                        Margin="16,10,0,20">
+
+
+                        <Image Source="junglecruise.jpeg" Aspect="AspectFill"/>
+
+                    </Frame>
+
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="5"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="5"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White"
+                            Margin="16,10,0,20">
+
+
+                            <Image Source="lift" Aspect="AspectFill"/>
+
+                        </Frame>
+
+
+
+                    </Grid>
+
+
+
+            </HorizontalStackLayout>
+        </ScrollView>
+
+        <Label 
+            Text="Amazon originals" 
+            TextColor="White" 
+            FontSize="20" 
+            FontAttributes="Bold" 
+            Margin="16,30,0,0"/>
+
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout>
+
+
+
+
+                    <Grid ColumnDefinitions="*,*,*,*,*"
+              RowDefinitions="*" >
+
+                        <Frame 
+                Grid.Row="0" Grid.ColumnSpan="0"
+                HeightRequest="300"
+                WidthRequest="200"
+                CornerRadius="5"
+                HorizontalOptions="Start"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="White" 
+                Margin="16,10,0,20">
+
+                            <Image Source="wilderness" Aspect="Fill"/>
+                        </Frame>
+
+                        <Frame 
+                Grid.Row="0" 
+                Grid.Column="1"
+                HeightRequest="300"
+                WidthRequest="200"
+                CornerRadius="5"
+                HorizontalOptions="Start"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="White"
+                Margin="16,10,0,20">
+
+
+                            <Image Source="citadel" Aspect="AspectFill"/>
+
+                        </Frame>
+
+                        <Frame 
+                Grid.Row="0" 
+                Grid.Column="2"
+                HeightRequest="300"
+                WidthRequest="200"
+                CornerRadius="5"
+                HorizontalOptions="Start"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="White"
+                Margin="16,10,0,20">
+
+
+                            <Image Source="therig" Aspect="AspectFill"/>
+
+                        </Frame>
+
+                        <Frame 
+                Grid.Row="0" 
+                Grid.Column="3"
+                HeightRequest="300"
+                WidthRequest="200"
+                CornerRadius="5"
+                HorizontalOptions="Start"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="White"
+                Margin="16,10,0,20">
+
+
+                            <Image Source="shelter" Aspect="AspectFill"/>
+
+                        </Frame>
+
+                        <Frame 
+                Grid.Row="0" 
+                Grid.Column="4"
+                HeightRequest="300"
+                WidthRequest="200"
+                CornerRadius="5"
+                HorizontalOptions="Start"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="White"
+                Margin="16,10,0,20">
+
+
+                            <Image Source="swarm" Aspect="AspectFill"/>
+
+                        </Frame>
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="5"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="5"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White"
+                            Margin="16,10,0,20">
+
+
+                            <Image Source="blacksnow" Aspect="AspectFill"/>
+
+                        </Frame>
+                    </Grid>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <Label 
+                Text="Comedies" 
+                TextColor="White" 
+                FontSize="20" 
+                FontAttributes="Bold" 
+                Margin="16,30,0,0"/>
+
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout>
+
+
+
+
+                    <Grid ColumnDefinitions="*,*,*,*,*"
+                          RowDefinitions="*" >
+
+                        <Frame 
+                            Grid.Row="0" Grid.ColumnSpan="0"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="5"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White" 
+                            Margin="16,10,0,20">
+
+                            <Image Source="goodboys" Aspect="Fill"/>
+                        </Frame>
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="1"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="5"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White"
+                            Margin="16,10,0,20">
+
+
+                            <Image Source="gu" Aspect="AspectFill"/>
+
+                        </Frame>
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="2"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="5"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White"
+                            Margin="16,10,0,20">
+
+
+                            <Image Source="ss" Aspect="AspectFill"/>
+
+                        </Frame>
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="3"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="5"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White"
+                            Margin="16,10,0,20">
+
+
+                            <Image Source="tfp" Aspect="AspectFill"/>
+
+                        </Frame>
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="4"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="5"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White"
+                            Margin="16,10,0,20">
+
+
+                            <Image Source="tag" Aspect="AspectFill"/>
+
+                        </Frame>
+
+                        <Frame 
+                             Grid.Row="0" 
+                             Grid.Column="5"
+                             HeightRequest="300"
+                             WidthRequest="200"
+                             CornerRadius="5"
+                             HorizontalOptions="Start"
+                             IsClippedToBounds="True"
+                             Padding="0"
+                             BackgroundColor="White"
+                             BorderColor="White"
+                             Margin="16,10,0,20">
+
+
+                            <Image Source="th" Aspect="AspectFill"/>
+
+                        </Frame>
+                    </Grid>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
